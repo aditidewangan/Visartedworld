@@ -1,0 +1,29 @@
+<%- include("partials/header"); -%>
+
+<section id="sign">
+
+    <form action="/sign" method="post">
+      <div class="form-group">
+        <label>Name : </label>
+        <input type="text" name="postName" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label>Email : </label>
+        <input type="email" name="postEmail" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label>Phone : </label>
+        <input type="Phone" name="postPhone" placeholder="Enter your phone">
+      </div>
+      <div class="form-group">
+        <label>Message : </label>
+        <textarea name="postMessage" rows="5" cols="40" placeholder="  Type a message...."></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-outline-info download-button btn-lg">Submit</button>
+      </div>
+    </form>
+
+</section>
+
+  <%- include("partials/footer"); -%>

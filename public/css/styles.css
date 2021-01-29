@@ -1,0 +1,130 @@
+html , body{
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  color : white;
+}
+
+.navbar{
+padding-top: 15px;
+padding-bottom: 15px;
+border: 0;
+border-radius: 0;
+margin-bottom: 0;
+font-size: 14px;
+letter-spacing: 5px;
+background: black;
+top: 0;
+left: 0;
+right: 0;
+position: fixed;
+z-index: 30;
+}
+.nav-item{
+  padding: 2px 7px;
+}
+.navbar-nav  li a:hover {
+    color: #17a2b8 !important;
+}
+
+#title{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0,0,0,0.3)),url("../images/camera.jpg");
+  background-size: cover;
+  width : 100%;
+  height : 100vh;
+  background-position: center;
+  position : relative;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.front h1{
+  padding: 20% 15%;
+  font-size: 3rem;
+}
+
+.footer-padding {
+  position: sticky;
+}
+.footer {
+	width: 100%;
+	height: 200px;
+	background-color: black;
+  padding : 5%;
+  font-size: 1rem;
+}
+.fab{
+  margin : 0px 30px;
+  font-size: 1.5rem;
+  padding-bottom: 6%;
+  color : white;
+}
+.footer a:hover{
+  color: #17a2b8 ;
+  text-decoration: none;
+}
+
+#carousel{
+  padding-top: 10%;
+  overflow-x: hidden;
+  background-color: #eee;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+.download-button{
+  margin : 0 5% 5% 0;
+}
+.d{
+  width: 800px;
+}
+.e{
+  border: 10px solid white;
+  width: 400px;
+  height: 350px;
+}
+.row img:hover{
+  filter: brightness(85%);
+}
+
+#sign{
+  background-color: #eee;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 100px;
+  color : black;
+
+}
+textarea{
+  width: 100%;
+}
+input{
+ padding: 10px;
+ display: block;
+ width: 100%;
+ height: 100%;
+}
+
+#about{
+  background-color: #eee;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  background-size: cover;
+  height : 100vh;
+  background-position: center;
+  position : relative;
+  overflow: hidden;
+}
+
+#compose{
+  background-color: #eee;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  background-size: cover;
+  height : 100vh;
+  background-position: center;
+  position : relative;
+  overflow: hidden;
+  padding-top: 10%;
+  color : black;
+}

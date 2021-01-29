@@ -1,0 +1,18 @@
+<%- include("partials/header") -%>
+
+<section id="compose">
+
+<h1>Compose</h1>
+
+<form  action="/compose" method="post" enctype="multipart/form-data">
+  <div class="form-group">
+
+    <input type="file" name="image" class="form-control-file" >
+  </div>
+
+  <button class="btn btn-outline-info download-button btn-lg" type="submit">Publish</button>
+</form>
+
+</section>
+
+<%- include("partials/footer") -%>
