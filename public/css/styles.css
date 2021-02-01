@@ -1,19 +1,18 @@
 html , body{
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu-bold', sans-serif;
   text-align: center;
   min-height: 100vh;
   color : white;
 }
 
 .navbar{
-padding-top: 15px;
-padding-bottom: 15px;
+padding : 15px 80px;
 border: 0;
 border-radius: 0;
 margin-bottom: 0;
 font-size: 14px;
 letter-spacing: 5px;
-background: black;
+background-color: rgba(0, 0, 0, 0.8);
 top: 0;
 left: 0;
 right: 0;
@@ -26,21 +25,50 @@ z-index: 30;
 .navbar-nav  li a:hover {
     color: #17a2b8 !important;
 }
-
-#title{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0,0,0,0.3)),url("../images/camera.jpg");
-  background-size: cover;
-  width : 100%;
-  height : 100vh;
-  background-position: center;
-  position : relative;
-  background-repeat: no-repeat;
-  overflow: hidden;
+.carousel-item {
+  height: 100vh;
 }
-
-.front h1{
-  padding: 20% 15%;
-  font-size: 3rem;
+.slideInDown{
+  padding-bottom: 180px;
+}
+.main{
+  height : 600px;
+  padding : 20px;
+}
+.side{
+  width : 280px;
+  height : 400px;
+  padding : 50px 20px;
+}
+.content{
+  color : black;
+  padding : 0px 20px;
+  font-family: 'Ubuntu-bold', sans-serif;
+}
+h3{
+  padding-top: 40px;
+  color: black ;
+  border-bottom: 2px solid #17a2b8 ;
+  margin-right: 520px;
+  margin-left: 520px;
+}
+.carousel-cell {
+  width: 40%;
+  height: 500px;
+  margin-right: 10px;
+  border-radius: 5px
+}
+.carousel-cell:before {
+  display: block;
+}
+.flickity{
+    padding: 30px 120px;
+}
+.images{
+  padding : 55px 20px;
+}
+.map{
+  padding: 0px 50px;
 }
 
 .footer-padding {
@@ -65,16 +93,11 @@ z-index: 30;
 }
 
 #carousel{
-  padding-top: 10%;
+  padding-top: 8%;
   overflow-x: hidden;
-  background-color: #eee;
-  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
 .download-button{
   margin : 0 5% 5% 0;
-}
-.d{
-  width: 800px;
 }
 .e{
   border: 10px solid white;
@@ -86,35 +109,31 @@ z-index: 30;
 }
 
 #sign{
-  background-color: #eee;
-  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-  padding: 40px;
+  padding-top: 8%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 10px;
-  padding-top: 100px;
-  color : black;
-
+  color: black;
+}
+.bounceIn{
+  padding: 0px 60px;
 }
 textarea{
   width: 100%;
+  border : none;
+  outline: none;
 }
 input{
  padding: 10px;
  display: block;
  width: 100%;
  height: 100%;
+ border : none;
+outline: none;
 }
-
-#about{
-  background-color: #eee;
-  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-  background-size: cover;
-  height : 100vh;
-  background-position: center;
-  position : relative;
-  overflow: hidden;
+.form-group{
+  border-bottom: 2px solid #17a2b8;
+  padding : 15px 0px;
 }
 
 #compose{

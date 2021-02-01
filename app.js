@@ -68,7 +68,7 @@ app.post("/sign",function(req,res){
 
   post.save(function(err){
     if(!err){
-      res.status(201).render("home");
+      res.status(201).render("sign");
     }
   });
 });
