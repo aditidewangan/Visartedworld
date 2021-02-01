@@ -162,10 +162,10 @@ outline: none;
 
   /*HOME*/
   .slideInDown{
-    padding-bottom: 350px;
+    padding-top: 20px;
   }
   .main{
-    padding : 5px 0px;
+    padding : 0px 0px;
   }
   .side{
     padding: 5px 10px;
