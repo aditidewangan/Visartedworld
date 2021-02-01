@@ -161,14 +161,21 @@ outline: none;
   }
 
   /*HOME*/
-  .slideInDown{
-    padding-top: 20px;
+  .carousel-item{
+    height : 300px;
+  }
+  .heading{
+    padding-top: 1px;
   }
   .main{
-    padding : 0px 0px;
+    padding : 10px 0px;
   }
   .side{
-    padding: 5px 10px;
+    padding: 10px 10px;
+  }
+  .container-fluid{
+    padding : 0px 0px;
+    overflow: hidden;
   }
 
   /*GALLERY*/
