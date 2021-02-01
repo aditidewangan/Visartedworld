@@ -157,18 +157,18 @@ outline: none;
 
   /*NAVBAR*/
   .navbar{
-    font-size: 40px;
+    font-size: 45px;
+  }
+  .navbar-brand{
+    font-size : 25px;
   }
 
   /*HOME*/
   .carousel-item{
     height : 500px;
   }
-  .heading{
-    padding-top: 10px;
-  }
   .main{
-    padding : 10px 0px;
+    padding : 20px 0px;
   }
   .side{
     padding: 10px 10px;
@@ -187,11 +187,20 @@ h3{
 .flickity{
   padding: 30px 120px;
 }
+.carousel-cell{
+  height : 300px;
+}
+.images{
+  padding-right: 80px;
+}
 
 /*SIGN*/
 #sign{
-  padding-bottom: 60px;
+  padding-bottom: 80px;
   overflow: hidden;
+}
+.bounceIn{
+  padding : 80px 0px;
 }
 
 }
