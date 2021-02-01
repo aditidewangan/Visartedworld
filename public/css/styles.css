@@ -94,7 +94,7 @@ h3{
   color: black;
 }
 .bounceIn{
-  padding: 0px 60px;
+  padding: 10px 60px;
 }
 textarea{
   width: 100%;
@@ -157,10 +157,14 @@ outline: none;
 
   /*NAVBAR*/
   .navbar{
-    font-size: 45px;
+    font-size: 50px;
   }
   .navbar-brand{
-    font-size : 25px;
+    font-size : 28px;
+  }
+  .navbar-toggler{
+    height: 50px;
+    width: 60px;
   }
 
   /*HOME*/
@@ -196,11 +200,11 @@ h3{
 
 /*SIGN*/
 #sign{
-  padding-bottom: 80px;
+  padding-bottom: 90px;
   overflow: hidden;
 }
 .bounceIn{
-  padding : 80px 0px;
+  padding : 75px 0px;
 }
 
 }
