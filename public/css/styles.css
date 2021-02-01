@@ -48,6 +48,9 @@ z-index: 30;
   padding : 0px 20px;
   font-family: 'Ubuntu-bold', sans-serif;
 }
+h5{
+  text-align: left;
+}
 
 /*GALLERY*/
 #carousel{
@@ -83,6 +86,19 @@ h3{
 }
 .row img:hover{
   filter: brightness(85%);
+}
+
+/*ABOUT*/
+#about{
+  padding-top: 8%;
+}
+.about-img{
+  padding: 30px;
+}
+.about{
+  color: black;
+  padding: 10px 80px;
+  padding-bottom: 50px;
 }
 
 /*SIGN*/
@@ -163,8 +179,12 @@ outline: none;
     font-size : 28px;
   }
   .navbar-toggler{
+    height: 60px;
+    width: 80px;
+  }
+  .navbar-toggler-icon{
     height: 50px;
-    width: 60px;
+    width: 50px;
   }
 
   /*HOME*/
@@ -184,9 +204,10 @@ outline: none;
 
   /*GALLERY*/
 h3{
+  padding-top: 80px;
   text-align: center;
-  margin-right: 200px;
-  margin-left: 200px;
+  margin-right: 230px;
+  margin-left: 230px;
 }
 .flickity{
   padding: 30px 120px;
