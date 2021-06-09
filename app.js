@@ -49,15 +49,23 @@ app.get("/",function(req,res){
     res.render("home");
 });
 
+app.get("/gallery",function(req,res){
+  Image.find({}, function(err, images){
+  res.render("gallery", {
+    images : images
+    });
+});
+});
+
 app.get("/about",function(req,res){
   res.render("about");
 });
 
-app.get("/sign",function(req,res){
-  res.render("sign");
+app.get("/contact",function(req,res){
+  res.render("contact");
 });
 
-app.post("/sign",function(req,res){
+app.post("/contact",function(req,res){
 
   const post = new Post({
     name : req.body.postName,
@@ -68,22 +76,33 @@ app.post("/sign",function(req,res){
 
   post.save(function(err){
     if(!err){
-      res.status(201).render("sign");
+      res.redirect("/gallery");
     }
   });
 });
 
-app.get("/gallery",function(req,res){
-  Image.find({}, function(err, images){
-  res.render("gallery", {
-    images : images
-    });
-});
+app.get("/login",function(req,res){
+  res.render("login");
 });
 
+app.post("/login",function(req,res){
 
-app.get("/compose",function(req,res){
-  res.render("compose");
+  const useremail = req.body.postEmail;
+  const userphone = req.body.postPhone;
+
+  Post.findOne({email : useremail},function(err,foundUser){
+    if(err){
+      console.log(err);
+    }else{
+      if(foundUser){
+        if(foundUser.phone === userphone){
+          res.render("compose");
+        }else{
+          res.redirect("/");
+        }
+      }
+    }
+  });
 });
 
 app.post("/compose",upload.single("image"),function(req,res){
@@ -97,7 +116,6 @@ app.post("/compose",upload.single("image"),function(req,res){
         res.redirect("gallery");
     }
   });
-
 });
 
 let port = process.env.PORT;

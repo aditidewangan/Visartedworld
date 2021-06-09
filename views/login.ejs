@@ -1,0 +1,20 @@
+<%- include("partials/header"); -%>
+
+<section id="compose">
+
+      <h2 class="cont">LOGIN</h2>
+      <form action="/login" method="post">
+        <div class="form-group">
+          <input type="email" name="postEmail" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <input type="phone" name="postPhone" placeholder="Enter your password" required>
+        </div>
+        <div>
+          <button type="submit" class="btn btn-outline-primary download-button btn-lg">Submit</button>
+        </div>
+      </form>
+
+</section>
+
+<%- include("partials/footer"); -%>

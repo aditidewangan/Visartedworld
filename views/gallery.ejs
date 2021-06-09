@@ -1,39 +1,58 @@
 <%- include("partials/header"); -%>
 
 <section id="carousel">
-  <h3 class="animated zoomIn">COLLECTIONS</h3>
+    <h2 class="cont">COLLECTIONS</h2>
   <div class="flickity">
   <div class="carousel" data-flickity='{ "freeScroll": true, "wrapAround": true ,"autoPlay": 2000 }'>
   <div class="carousel-cell">
-    <a href="images/ganga-aarti.jpeg"><img class=" d-block w-100" src="images/ganga-aarti.jpeg" alt="crocus-img"></a>
+    <img class=" d-block w-100" src="images/ganga-aarti.jpeg" alt="crocus-img">
   </div>
   <div class="carousel-cell">
-    <a href="images/sky.jpeg"><img class=" d-block w-100"src="images/sky.jpeg" alt="crocus-img"></a>
+    <img class=" d-block w-100"src="images/sky.jpeg" alt="crocus-img">
   </div>
   <div class="carousel-cell">
-    <a href="images/mountain.jpeg"><img class=" d-block w-100"src="images/mountain.jpeg" alt="crocus-img"></a>
+    <img class=" d-block w-100"src="images/mountain.jpeg" alt="crocus-img">
   </div>
   <div class="carousel-cell">
-    <a href="images/street-light.jpeg"><img class=" d-block w-100"src="images/street-light.jpeg" alt="crocus-img"></a>
+    <img class=" d-block w-100"src="images/street-light.jpeg" alt="crocus-img">
   </div>
 </div>
   </div>
 
-
-  <div class="images">
-    <div class="container animated slideInLeft">
+    <div class="container">
 
        <div class="row">
    <% images.forEach(function(img){ %>
-       <div class="col-lg-4 col-md-6">
-      <a href="..\upload\gallery\<%=img.photo%>"><img src="..\upload\gallery\<%=img.photo%>"class="e" alt="..."></a>
-      </div>
+      <div class="col-lg-4 col-md-6">
+  <a href="" data-toggle="modal" data-target="#exampleModalCenter<%=img.photo%>">
+    <div>
+        <img class="photo" src="..\upload\gallery\<%=img.photo%>" alt="">
+    </div>
+  </a>
+  <div class="modal fade" id="exampleModalCenter<%=img.photo%>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLongTitle">Image</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+  <img class="photo" src="..\upload\gallery\<%=img.photo%>" alt="">
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
 
   <% }) %>
 
   </div></div>
-  </div>
 
-  </section>
+      </section>
 
   <%- include("partials/footer"); -%>

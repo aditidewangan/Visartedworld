@@ -1,30 +1,29 @@
 html , body{
-  font-family: 'Ubuntu-bold', sans-serif;
   text-align: center;
   min-height: 100vh;
-  color : white;
+  color : black;
 }
 
 /*NAVBAR*/
 .navbar{
-padding : 15px 80px;
-border: 0;
-border-radius: 0;
-margin-bottom: 0;
-font-size: 14px;
+padding : 10px 50px;
+font-size: 13px;
 letter-spacing: 5px;
-background-color: rgba(0, 0, 0, 0.8);
+background-color: #03256c;
 top: 0;
 left: 0;
 right: 0;
 position: fixed;
 z-index: 30;
 }
+.navbar-brand{
+  font-size: 1.3rem;
+}
 .nav-item{
   padding: 2px 7px;
 }
 .navbar-nav  li a:hover {
-    color: #17a2b8 !important;
+    color: white !important;
 }
 
 /*HOME*/
@@ -34,35 +33,23 @@ z-index: 30;
 .slideInDown{
   padding-bottom: 180px;
 }
-.main{
-  height : 600px;
-  padding : 20px;
-}
 .side{
-  width : 280px;
+  width : 400px;
   height : 400px;
-  padding : 50px 20px;
+  padding-bottom: 30px;
 }
 .content{
-  color : black;
-  padding : 0px 20px;
-  font-family: 'Ubuntu-bold', sans-serif;
+  padding-top: 30px;
+  width : 40%;
+  margin : auto;
 }
-h5{
-  text-align: left;
+.bottom{
+  padding: 50px 20px 100px 20px;
 }
 
 /*GALLERY*/
 #carousel{
-  padding-top: 8%;
-  overflow-x: hidden;
-}
-h3{
-  padding-top: 40px;
-  color: black ;
-  border-bottom: 2px solid #17a2b8 ;
-  margin-right: 520px;
-  margin-left: 520px;
+  padding : 8% 0%;
 }
 .carousel-cell {
   width: 40%;
@@ -74,15 +61,12 @@ h3{
   display: block;
 }
 .flickity{
-    padding: 30px 120px;
+    padding: 10px 80px 30px 80px;
 }
-.images{
-  padding : 55px 20px;
-}
-.e{
-  border: 10px solid white;
-  width: 400px;
-  height: 350px;
+.photo{
+  width: 100%;
+  height: 100%;
+  padding: 15px;
 }
 .row img:hover{
   filter: brightness(85%);
@@ -90,27 +74,25 @@ h3{
 
 /*ABOUT*/
 #about{
-  padding-top: 8%;
+  padding : 8%;
 }
-.about-img{
-  padding: 30px;
+.ash{
+  padding-top: 10px;
+  width : 400px;
+  height : 410px;
 }
-.about{
-  color: black;
-  padding: 10px 80px;
-  padding-bottom: 50px;
+.ash-about{
+  padding-top: 45px;
 }
 
-/*SIGN*/
-#sign{
-  padding-top: 8%;
-  display: flex;
+/*CONTACT*/
+#contact{
+  padding : 8% 5%;
   justify-content: center;
   align-items: center;
-  color: black;
 }
-.bounceIn{
-  padding: 10px 60px;
+.cont{
+  padding-bottom: 30px;
 }
 textarea{
   width: 100%;
@@ -126,24 +108,17 @@ input{
 outline: none;
 }
 .form-group{
-  border-bottom: 2px solid #17a2b8;
+  border-bottom: 2px solid #03256c;
   padding : 15px 0px;
 }
 .download-button{
-  margin : 0 5% 5% 0;
+  margin : 2% 5% 5% 2%;
 }
 
 /*COMPOSE*/
 #compose{
-  background-color: #eee;
-  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-  background-size: cover;
   height : 100vh;
-  background-position: center;
-  position : relative;
-  overflow: hidden;
-  padding-top: 10%;
-  color : black;
+  padding: 10% 20%;
 }
 
 /*FOOTER*/
@@ -152,19 +127,23 @@ outline: none;
 }
 .footer {
 	width: 100%;
-	height: 200px;
-	background-color: black;
-  padding : 5%;
+	height: 150px;
+	background-color: #03256c;
+  padding : 3%;
   font-size: 1rem;
 }
 .fab{
   margin : 0px 30px;
-  font-size: 1.5rem;
-  padding-bottom: 6%;
-  color : white;
+  font-size: 2rem;
+  padding-bottom: 3%;
+  color : rgba(255,255,255,.5);;
+}
+.foot{
+  font-size: 13px;
+  color: white;
 }
 .footer a:hover{
-  color: #17a2b8 ;
+  color: white ;
   text-decoration: none;
 }
 
@@ -173,59 +152,54 @@ outline: none;
 
   /*NAVBAR*/
   .navbar{
-    font-size: 50px;
+    font-size: 20px;
   }
   .navbar-brand{
-    font-size : 28px;
+    font-size : 23px;
   }
   .navbar-toggler{
-    height: 60px;
-    width: 80px;
+    height: 40px;
+    width: 45px;
   }
   .navbar-toggler-icon{
-    height: 50px;
-    width: 50px;
+    height: 22px;
+    width: 20px;
   }
 
   /*HOME*/
   .carousel-item{
     height : 500px;
   }
-  .main{
-    padding : 20px 0px;
-  }
   .side{
-    padding: 10px 10px;
+    padding: 20px 10px;
   }
-  .container-fluid{
-    padding : 0px 0px;
-    overflow: hidden;
+  .content{
+    width : 60%;
+    margin : auto;
   }
 
   /*GALLERY*/
-h3{
-  padding-top: 80px;
-  text-align: center;
-  margin-right: 230px;
-  margin-left: 230px;
-}
+  #carousel{
+    padding : 90px 0px;
+  }
 .flickity{
-  padding: 30px 120px;
+  padding: 5px 100px 30px 100px;
 }
 .carousel-cell{
   height : 300px;
 }
-.images{
-  padding-right: 80px;
+
+/*ABOUT*/
+#about{
+    padding : 90px 100px;
 }
 
-/*SIGN*/
-#sign{
-  padding-bottom: 90px;
-  overflow: hidden;
+/*CONTACT*/
+#contact{
+  padding : 90px 100px;
 }
-.bounceIn{
-  padding : 75px 0px;
+.footer{
+  height : 130px;
 }
 
 }
