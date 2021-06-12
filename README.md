@@ -18,7 +18,7 @@ See the section about running tests for more information.
  ## Setup Guidelines
 Clone the repository -
 ```
-git clone https://github.com/purnima143/Kurakoo.git
+git clone https://github.com/aditidewangan/Visartedworld.git
 ```
 
 ### Backend
@@ -41,6 +41,7 @@ git clone https://github.com/purnima143/Kurakoo.git
 4. Run the server
     ```
     npm run server
+    node app.js
     ```
 
     Link for the screenshots, how to setup backend locally are kept in
@@ -63,7 +64,7 @@ _NOTE: To run the Frontend side of the application it recommended to run the bac
 
 ## Start Frontend & Backend simultaneously
 
- 1. Navigate to the root folder i.e.  Kurakoo.git
+ 1. Navigate to the root folder i.e.  Visarted.git
 
  2. Install the dependencies by running
 
