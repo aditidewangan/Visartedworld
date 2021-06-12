@@ -64,7 +64,7 @@ _NOTE: To run the Frontend side of the application it recommended to run the bac
 
 ## Start Frontend & Backend simultaneously
 
- 1. Navigate to the root folder i.e.  Visarted.git
+ 1. Navigate to the root folder i.e.  Visartedworld.git
 
  2. Install the dependencies by running
 
